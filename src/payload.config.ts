@@ -1,7 +1,9 @@
 import { buildConfig } from "payload/config";
 import { mongooseAdapter } from "@payloadcms/db-mongodb";
 import { slateEditor } from "@payloadcms/richtext-slate";
-import { webpackBundler } from "@payloadcms/bundler-webpack";
+// import { webpackBundler } from "@payloadcms/bundler-webpack";
+import { viteBundler } from "@payloadcms/bundler-vite";
+
 import path from "path";
 import dontenv from "dotenv";
 import { Products } from "./collections/products/product";
@@ -21,7 +23,7 @@ export default buildConfig({
   },
   admin: {
     user: "users",
-    bundler: webpackBundler(),
+    bundler: viteBundler(),
     meta: {
       titleSuffix: "- DigitalHippo",
       ogImage: "/thumbnail.jpg",

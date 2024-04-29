@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/breadcrumb";
 import { PRODUCT_CATEGORIES } from "@/config";
 import { getPayloadClient } from "@/get-payload";
-import { formatPrice } from "@/lib/utils";
+import { constructMetadata, formatPrice } from "@/lib/utils";
 import { Check, Shield } from "lucide-react";
 import { notFound } from "next/navigation";
 
@@ -45,6 +45,9 @@ const ProductPage = async ({ params }: ProductPageProps) => {
   const validUrls = product.images
     .map(({ image }) => (typeof image === "string" ? image : image.url))
     .filter(Boolean) as string[];
+  const metadata = constructMetadata({
+    title: `DigitalHippo - ${product.name}`,
+  });
 
   if (!product) return notFound();
 

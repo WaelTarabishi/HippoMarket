@@ -3,7 +3,7 @@ import { Icons } from "@/components/icons";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { cn } from "@/lib/utils";
+import { cn, constructMetadata } from "@/lib/utils";
 import { ArrowRight, Loader2 } from "lucide-react";
 import Link from "next/link";
 import { z } from "zod";
@@ -91,6 +91,7 @@ const SignInPage = () => {
                 <div className="grid gap-1 py-2">
                   <Label htmlFor="email">Email</Label>
                   <Input
+                    id="email"
                     {...register("email")}
                     placeholder="you@example.com"
                     className={cn({
@@ -106,6 +107,7 @@ const SignInPage = () => {
                 <div className="grid gap-1 py-2">
                   <Label htmlFor="password">Password</Label>
                   <Input
+                    id="password"
                     type="password"
                     {...register("password")}
                     placeholder="Password"

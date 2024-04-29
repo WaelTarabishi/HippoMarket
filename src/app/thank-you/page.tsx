@@ -4,16 +4,20 @@ import { getPayloadClient } from "@/get-payload";
 import { notFound, redirect } from "next/navigation";
 import { Product, ProductFile, User } from "@/payload-types";
 import { PRODUCT_CATEGORIES } from "@/config";
-import { formatPrice } from "@/lib/utils";
+import { constructMetadata, formatPrice } from "@/lib/utils";
 import Link from "next/link";
-// import PaymentStatus from "@/components/PaymentStatus";
 import { getServerSideUser } from "@/lib/payload.-utils";
+import PaymentStatus from "@/components/payment-status";
 
 interface PageProps {
   searchParams: {
     [key: string]: string | string[] | undefined;
   };
 }
+
+export const metadata = constructMetadata({
+  title: "DigitalHippo - Thank You ♥",
+});
 
 const ThankYouPage = async ({ searchParams }: PageProps) => {
   const orderId = searchParams.orderId;
@@ -159,11 +163,11 @@ const ThankYouPage = async ({ searchParams }: PageProps) => {
                 </div>
               </div>
 
-              {/* <PaymentStatus
+              <PaymentStatus
                 isPaid={order._isPaid}
                 orderEmail={(order.user as User).email}
                 orderId={order.id}
-              /> */}
+              />
 
               <div className="mt-16 border-t border-gray-200 py-6 text-right">
                 <Link

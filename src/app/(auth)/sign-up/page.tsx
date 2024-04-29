@@ -71,6 +71,7 @@ const SignUpPage = () => {
                 <div className="grid gap-1 py-2">
                   <Label htmlFor="email">Email</Label>
                   <Input
+                    id="email"
                     {...register("email")}
                     placeholder="you@example.com"
                     className={cn({
@@ -86,6 +87,7 @@ const SignUpPage = () => {
                 <div className="grid gap-1 py-2">
                   <Label htmlFor="password">Password</Label>
                   <Input
+                    id="password"
                     type="password"
                     {...register("password")}
                     placeholder="Password"
