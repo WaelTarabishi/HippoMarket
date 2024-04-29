@@ -1,6 +1,7 @@
 # 🛠️ DigitalHippo - A Modern Fullstack E-Commerce Marketplace for Digital Products
 
 Welcome to DigitalHippo - a comprehensive e-commerce marketplace built from scratch using Next.js 14. Here's a glimpse of what you can expect:
+![thumbnail](https://github.com/WaelTarabishi/HippoMarket/assets/110033974/d4e50059-7671-41a4-9c87-899c42a518a3)
 
 ## ✨ Features
 
