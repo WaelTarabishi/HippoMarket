@@ -1,9 +1,6 @@
 DigitalHippo - A Modern Fullstack E-Commerce Marketplace for Digital Products
 Built with the Next.js 14 App Router, tRPC, TypeScript, Payload & Tailwind
 
-![Project Image](
-htpps://hippomarket-production-4d90.up.railway.app/thumbnail.jpg)
-
 Features
 🛠️ Complete marketplace built from scratch in Next.js 14
 💻 Beautiful landing page & product pages included
