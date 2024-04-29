@@ -1,5 +1,4 @@
-DigitalHippo - A Modern Fullstack E-Commerce Marketplace for Digital Products
-Built with the Next.js 14 App Router, tRPC, TypeScript, Payload & Tailwind
+**DigitalHippo - A Modern Fullstack E-Commerce Marketplace for Digital Products**
 
 Features
 🛠️ Complete marketplace built from scratch in Next.js 14
@@ -15,13 +14,10 @@ Features
 ✅ Admins can verify products to ensure high quality
 ⌨️ 100% written in TypeScript
 🎁 ...much more
+
 Getting started
-To get started with this project, run
+To get started with this project, clone the repository:
 
-  git clone https://github.com/joschan21/digitalhippo.git
-and copy the .env.example variables into a separate .env file, fill them out & and that's all you need to get started!
+git clone https://github.com/your_username/your_repository.git
 
-Acknowledgements
-Payload for making this project possible
-License
-MIT
+Then copy the .env.example variables into a separate .env file, fill them out, and you're ready to go!
