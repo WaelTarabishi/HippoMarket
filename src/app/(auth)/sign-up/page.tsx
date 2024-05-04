@@ -37,6 +37,7 @@ const SignUpPage = () => {
     },
     onSuccess: ({ sentToEmail }) => {
       toast.success(`Verification email sent to ${sentToEmail}`);
+      router.refresh();
       router.push(`/verify-email?to${sentToEmail}`);
     },
   });

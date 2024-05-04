@@ -50,6 +50,7 @@ const SignInPage = () => {
         router.push(`/sell`);
         return;
       }
+      router.refresh();
       router.push("/");
     },
     onError: (err) => {
